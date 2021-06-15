@@ -6,8 +6,7 @@ let aPokemon = {
   id: 1,
   name: "bulbizarre",
   type: "plante",
-  img:
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+  img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
 };
 
 // transformer la liste en array
@@ -32,12 +31,12 @@ app.addEventListener("click", () => {
   noMatch.remove();
 
   let listOfPokemons = document.createElement("div");
-  listOfPokemons.id = "pokemonItem"; 
+  listOfPokemons.id = "pokemonItem";
   listOfPokemons.className = "pokemonItem"; // on crée une div à l'intérieur de laquelle mettre les infos du pokemon
 
   let pokeId = document.createElement("div");
   pokeId.className = "pokemonId";
-  let pokeId_content = document.createTextNode("#"+pokemons[0]); // on crée une div pour l'ID du pokemon, qui reprend la première valeur de l'array
+  let pokeId_content = document.createTextNode("#" + pokemons[0]); // on crée une div pour l'ID du pokemon, qui reprend la première valeur de l'array
   pokeId.appendChild(pokeId_content);
 
   let pokeName = document.createElement("div");
@@ -63,9 +62,8 @@ app.addEventListener("click", () => {
 
   let oldList = document.getElementById("pokemonItem"); // on insère les infos à l'intérieur du bloc
   let newPokemonItem = oldList;
-    newPokemonItem.append(pokeId, pokeName, pokeType, pokeImg);
+  newPokemonItem.append(pokeId, pokeName, pokeType, pokeImg);
 });
-
 
 // import "./styles.css";
 
