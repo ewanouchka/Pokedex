@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Pokemon Solid";
+  src: url("/font/Pokemon_Solid.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pokemon Hollow";
+  src: url("/font/Pokemon_Hollow.ttf") format("truetype");
+}
+
 :root {
   --color-bg: silver;
   --color-light: #f0f0f0;
@@ -7,6 +17,7 @@
   --color-darkred: rgb(173, 11, 44);
   --color-red: crimson;
   --color-gold: gold;
+  --color-blue: rgb(24, 127, 211);
   --header-height: 10rem;
   --footer-height: 5rem;
 }
@@ -57,10 +68,11 @@ header {
 
 .header-title {
   color: var(--color-gold);
+  font-family: "Pokemon Solid", sans-serif;
   font-size: 4rem;
   padding: auto;
-  -webkit-text-stroke: var(--color-darker) 2px;
-  text-shadow: 2px 2px 0px var(--color-white);
+  -webkit-text-stroke: var(--color-blue) 4px;
+  text-shadow: 3px 3px 0px var(--color-white);
 }
 
 main {
@@ -75,9 +87,6 @@ main {
     var(--color-white) 97%,
     var(--color-bg) 100%
   );
-}
-
-#app {
 }
 
 #pokeList {
