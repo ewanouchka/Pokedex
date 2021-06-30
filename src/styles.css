@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Pokemon Solid";
-  src: url("/font/Pokemon_Solid.ttf") format("truetype");
+  src: url("../font/Pokemon_Solid.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Pokemon Hollow";
-  src: url("/font/Pokemon_Hollow.ttf") format("truetype");
+  src: url("../font/Pokemon_Hollow.ttf") format("truetype");
 }
 
 :root {
