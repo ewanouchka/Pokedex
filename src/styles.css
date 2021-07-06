@@ -113,6 +113,20 @@ button:hover {
   color: var(--color-dark);
 }
 
+.hidden-button {
+  display: none;
+}
+.show-button {
+  display: inline-block;
+}
+
+#pokemons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .pokemonItem {
   width: 150px;
   height: 150px;
@@ -121,7 +135,7 @@ button:hover {
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 1rem;
   border-radius: 0.5rem;
   box-shadow: inset 0px 0px 1rem var(--color-bg);
   border: 2px solid var(--color-bg);
@@ -138,6 +152,7 @@ button:hover {
 .pokemonName {
   font-size: 1.5rem;
   width: 100%;
+  text-transform: capitalize;
 }
 
 .pokemonType {
